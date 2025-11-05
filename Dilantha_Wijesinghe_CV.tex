@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Dilantha Wijesinghe} \\ \vspace{1pt}
+    \small +94 72 108 9721 $|$ \href{mailto:wdilantha66@gmail.com}{\underline{wdilantha66@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/dilantha-wijesinghe}{\underline{linkedin.com/in/dilantha-wijesinghe}} $|$
+    \href{https://github.com/Dilantha-Wijesinghe}{\underline{github.com/Dilantha-Wijesinghe}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Plymouth}{Affiliated University, NSBM Sri Lanka}
+      {BSc. in Software Engineering; GPA: 68.5/100 -- Second Class (Upper)}{March 2022 -- May 2025}
+    \resumeSubheading
+      {De Mazenod College}{Kandana, Sri Lanka}
+      {G.C.E. Advanced Level (Physics - B, Chemistry - B, Biology - C)}{Jan. 2018 -- Feb. 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Associate Software Engineer}{May 2025 -- Present}
+      {HealthRecon Connect}{Colombo, Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Refactored and revived a critical frontend project with heavy code debt through implementation of best practices and clean architecture, utilizing React Vite for optimal performance}
+        \resumeItem{Developed backend services using Java Spring Boot, ensuring seamless integration with refactored frontend components}
+        \resumeItem{Built a notification microservice using Java Spring with Firebase Cloud Messaging, delivering real-time in-app notifications and email alerts through callback mechanisms}
+        \resumeItem{Engineered an AI-powered medical coding automation system consisting of three integrated codebases: Citrix desktop automation for medical record download, data extraction pipeline, and AI model integration with engineered prompts, significantly reducing medical coder hiring costs}
+        \resumeItem{Created custom automation scripts for multiple clients with diverse requirements, including file generation in custom formats and SFTP-based file extraction}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Oct. 2024 -- May 2025}
+      {HealthRecon Connect}{Colombo, Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Revamped a legacy file processing service using Java Spring Boot, achieving 30x performance improvement and generating substantial revenue for the company}
+        \resumeItem{Developed Python automation scripts for file processing, uploading, and browser automation, streamlining operational workflows}
+        \resumeItem{Built and integrated multiple features for a frontend project using React Vite, handling end-to-end development from UI implementation to API integration}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Jan. 2024 -- July 2024}
+      {Elysian Crest}{Colombo, Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Developed the company's first mobile application for United Tobacco Processing, a Belgian-affiliated company, serving 2,500+ internal employees}
+        \resumeItem{Built a cross-platform application using React Native with Expo Router, implementing real-time chat functionality with WebSockets}
+        \resumeItem{Successfully delivered the project following agile development methodology, which resulted in an acquisition by the Belgian company}
+        \resumeItem{Collaborated with cross-functional teams to design and implement user-friendly features and optimize application performance}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------VOLUNTEER EXPERIENCE-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Council Member \& Technical Lead}{Oct. 2022 -- May 2025}
+      {FOSS Community, NSBM}{Colombo, Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Led the development of the Technosphere 2022 event website using the MERN stack (MongoDB, Express, React, Node.js) and MUI, managing event announcements and design with Figma}
+        \resumeItem{Developed the Sri Lanka Software Freedom Day 2023 website using Next.js, Framer Motion, and MongoDB, resulting in 100+ student registrations for this international initiative}
+        \resumeItem{Organized and conducted multiple GitHub sessions for undergraduate students, teaching fundamentals of Git and GitHub version control}
+        \resumeItem{Contributed technical articles as a Writer for FOSS NSBM's Medium Publication, sharing knowledge with the developer community}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{CarePulse Health Management} $|$ \emph{Next.js, TypeScript, TailwindCSS, Appwrite}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack health management platform connecting patients and doctors through appointment scheduling}
+            \resumeItem{Implemented secure patient record management including allergies, medical history, and physician information}
+            \resumeItem{Designed responsive UI with TailwindCSS and integrated Appwrite for backend services and authentication}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{DigitalHippo E-commerce Platform} $|$ \emph{Next.js, React, Node.js, Express, MongoDB, tRPC, PayloadCMS}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a fully functional e-commerce website with secure authentication and payment gateway integration}
+            \resumeItem{Implemented content management system using PayloadCMS for easy product and content administration}
+            \resumeItem{Utilized tRPC for type-safe API communication between frontend and backend services}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Green Supermarket E-commerce} $|$ \emph{Next.js, TypeScript, TailwindCSS}}{}
+          \resumeItemListStart
+            \resumeItem{Created a full-stack e-commerce platform with separate admin and customer portals}
+            \resumeItem{Implemented advanced features including product filtration, user authentication, discount management, and category organization}
+            \resumeItem{Designed and developed responsive interfaces for optimal user experience across devices}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Nekomi AI Discord Bot} $|$ \emph{JavaScript, OpenAI API}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an AI-powered personality-based Discord Bot using OpenAI's ChatGPT 3.5 Turbo}
+            \resumeItem{Implemented natural language processing capabilities for interactive conversations in Discord channels}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Java, Python, C\#, SQL, Go} \\
+     \textbf{Frameworks \& Libraries}{: React, Next.js, Node.js, Express.js, Spring Boot, React Native, Framer Motion, TailwindCSS} \\
+     \textbf{Databases}{: MongoDB, PostgreSQL, Prisma} \\
+     \textbf{Tools \& Platforms}{: Git, GitHub, Docker, Azure, Vercel, Figma, Postman, GitHub Actions, Appwrite, PayloadCMS, Firebase Cloud Messaging, Citrix} \\
+     \textbf{Specializations}{: Microservices Architecture, AI Integration, Automation Scripting, Clean Architecture, Legacy System Modernization}
+    }}
+ \end{itemize}
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cypher'23 Competition}{: Won 5th place in the algorithmic-based inter-university Hackathon organized by KDU Sri Lanka (May 2023)} \\
+     \textbf{Bashaway 2023 Competition}{: Secured 11th place in the automation and scripting-based inter-university competition organized by FOSS Community, SLIIT (2023)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
